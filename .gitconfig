@@ -1,0 +1,16 @@
+[user]
+	name = Michał Dolny
+	email = michal.dolny@gmail.com
+[core]
+	autocrlf = input
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
+[alias]
+	st = status -s
+	lg = log --oneline --decorate --all --graph
+[branch]
+	autosetuprebase = always
+[push]
+	default = simple
