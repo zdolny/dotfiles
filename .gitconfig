@@ -2,6 +2,7 @@
 	name = Michał Dolny
 	email = michal.dolny@gmail.com
 [core]
+	excludesfile = ~/.gitignore_global
 	autocrlf = input
 [pull]
 	rebase = true
