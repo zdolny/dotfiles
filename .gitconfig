@@ -1,17 +1,26 @@
 [user]
-	name = Michał Dolny
-	email = michal.dolny@gmail.com
+  name = Michał Dolny
+  email = michal.dolny@gmail.com
 [core]
-	excludesfile = ~/.gitignore_global
-	autocrlf = input
+  excludesfile = ~/.gitignore_global
+  autocrlf = input
+  editor = /usr/bin/vim
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = [mergetool "sourcetree"]
+  cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [pull]
-	rebase = true
+  rebase = true
 [rerere]
-	enabled = true
+  enabled = true
 [alias]
-	st = status -s
-	lg = log --oneline --decorate --all --graph
+  st = status -s
+  lg = log --oneline --decorate --all --graph --date-order
+  tree = log --graph --decorate --pretty=oneline --abbrev-commit
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 [push]
-	default = simple
+  default = simple
+[commit]
+  template = /Users/mdolny/.stCommitMsg

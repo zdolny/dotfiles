@@ -1,0 +1,15 @@
+{
+  "explorer.confirmDelete": false,
+  "emmet.includeLanguages": {
+    "twig": "html"
+  },
+  "editor.wordWrap": "on",
+  "window.zoomLevel": 0,
+  "editor.tabSize": 2,
+  "editor.fontSize": 13,
+  "editor.renderWhitespace": "boundary",
+  "files.trimTrailingWhitespace": true,
+  "window.newWindowDimensions": "maximized",
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true
+}
